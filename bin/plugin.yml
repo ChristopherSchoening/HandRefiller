@@ -1,0 +1,6 @@
+name: HandRefiller
+author: Christopher Schoening
+version: 0.9
+api-version: 1.13
+main: christopher.schoening.HandRefiller.Main
+description: HandRefiller is a plugin which refills a players held when it's leaving from his hand and the user has an appropriate item in his inventory to refill with.
