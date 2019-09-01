@@ -88,6 +88,7 @@ public class EventListener implements Listener{
 		if(itemToRefill.getType() == Material.CARROTS) itemToRefill = new ItemStack(Material.CARROT);
 		if(itemToRefill.getType() == Material.BEETROOTS) itemToRefill = new ItemStack(Material.BEETROOT_SEEDS);
 		if(itemToRefill.getType() == Material.COCOA) itemToRefill = new ItemStack(Material.COCOA_BEANS);
+		if(itemToRefill.getType() == Material.WALL_TORCH) itemToRefill = new ItemStack(Material.TORCH);
 		/*nether wart, melonseeds,pumpkinseeds not working other items may not work too*/
 		onRefillEventOccurred(event.getPlayer(), itemToRefill, event.getHand());
 	}
@@ -142,7 +143,7 @@ public class EventListener implements Listener{
 	 */
 	private void refillHeldItem(Player player, ItemStack item, EquipmentSlot handToRefill) throws ItemRefillException {
 
-		if(Main.ENV_DEBUG)Log.info("Looking for: "+item.getType());
+		if(Main.ENV_DEBUG) Log.info("Looking for: "+item.getType());
 		
 		PlayerInventory inventory = player.getInventory();
 				
